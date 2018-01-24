@@ -34,9 +34,9 @@ namespace TestProjetas.WebApi.Controllers
             new VehicleRepository().Repository.Add(value);
         }
 
-        // PUT: api/Vehicles/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]Vehicle value)
+        // PUT: api/Vehicles
+        [HttpPut]
+        public void Put([FromBody]Vehicle value)
         {
             new VehicleRepository().Repository.Update(value);
         }
